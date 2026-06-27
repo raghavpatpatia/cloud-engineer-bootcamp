@@ -164,12 +164,12 @@ cat $HOME\Desktop\cloudforge-notes\day1.txt
 
 ## ✅ Completion Checklist
 
-- [ ] I opened a terminal on Windows
-- [ ] I ran `whoami`, `pwd`, and `ls` and understood each output
-- [ ] I completed the Mini Challenge and explained `$(...)`
-- [ ] I created `day1.txt` from the terminal (Project Mission)
-- [ ] I passed the quiz
-- [ ] I added **+125 XP** to [PROGRESS.md](../../../PROGRESS.md)
+- [x] I opened a terminal on Windows
+- [x] I ran `whoami`, `pwd`, and `ls` and understood each output
+- [x] I completed the Mini Challenge and explained `$(...)`
+- [x] I created `day1.txt` from the terminal (Project Mission)
+- [x] I passed the quiz
+- [x] I added **+125 XP** to [PROGRESS.md](../../../PROGRESS.md)
 
 ---
 

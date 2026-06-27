@@ -54,7 +54,7 @@ XP:     0
 > Tick each box as you finish it. Lesson = 100 XP (Quest) + 25 XP (Quiz). Boss = 500 XP. Finishing a world = +250 XP bonus.
 
 ### 🖥️ World 0 — Environment Setup
-- [ ] Lesson 1 — Meet your machine & the terminal
+- [x] Lesson 1 — Meet your machine & the terminal
 - [ ] Lesson 2 — Install WSL2 + Ubuntu
 - [ ] Lesson 3 — Editor, Node.js & a sane setup
 - [ ] Boss Battle — The Broken Workstation
