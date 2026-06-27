@@ -1,0 +1,72 @@
+name: Update progress & publish profile
+
+# Regenerates PROGRESS.md + profile.html from the checklists on every push that
+# touches them (including edits made in the GitHub web UI), commits the result
+# back, and publishes profile.html to GitHub Pages.
+on:
+  push:
+    branches: [master, main]
+    paths:
+      - 'PROGRESS.md'
+      - 'scripts/update_progress.py'
+      - '.github/workflows/progress.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write   # commit the regenerated files back to the repo
+  pages: write      # publish to GitHub Pages
+  id-token: write   # required by actions/deploy-pages
+
+# Never run two Pages deployments at once; let the latest finish.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Regenerate PROGRESS.md and profile.html
+        run: python3 scripts/update_progress.py
+
+      # Commit the regenerated files back. Pushes made with GITHUB_TOKEN do NOT
+      # trigger another workflow run, so this can't loop; [skip ci] is belt-and-braces.
+      - name: Commit regenerated files (if changed)
+        run: |
+          if [ -n "$(git status --porcelain PROGRESS.md profile.html)" ]; then
+            git config user.name  "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add PROGRESS.md profile.html
+            git commit -m "chore: auto-update progress & profile [skip ci]"
+            git push
+          else
+            echo "Nothing to regenerate — already up to date."
+          fi
+
+      # Serve the dashboard at the Pages site root (index.html).
+      - name: Prepare Pages site
+        run: |
+          mkdir -p _site
+          cp profile.html _site/index.html
+          touch _site/.nojekyll
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

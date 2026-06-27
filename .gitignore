@@ -1,0 +1,6 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# GitHub Pages build output (generated in CI from profile.html)
+_site/
