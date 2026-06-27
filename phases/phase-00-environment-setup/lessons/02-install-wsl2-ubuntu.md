@@ -176,13 +176,13 @@ cat ~/projects/SETUP.md
 
 ## ✅ Completion Checklist
 
-- [ ] `wsl --install` completed and I restarted my PC
-- [ ] I created a Linux username + password
-- [ ] `uname -a` confirms I'm in Linux/WSL2
-- [ ] I ran `sudo apt update && sudo apt upgrade -y` successfully
-- [ ] I created `~/projects` with a `SETUP.md` (Project Mission)
-- [ ] I passed the quiz
-- [ ] I added **+125 XP** to [PROGRESS.md](../../../PROGRESS.md)
+- [x] `wsl --install` completed and I restarted my PC
+- [x] I created a Linux username + password
+- [x] `uname -a` confirms I'm in Linux/WSL2
+- [x] I ran `sudo apt update && sudo apt upgrade -y` successfully
+- [x] I created `~/projects` with a `SETUP.md` (Project Mission)
+- [x] I passed the quiz
+- [x] I added **+125 XP** to [PROGRESS.md](../../../PROGRESS.md)
 
 ---
 

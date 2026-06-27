@@ -15,7 +15,7 @@ REPO_ROOT="$(git rev-parse --show-toplevel)"
 
 # Only act if PROGRESS.md is staged.
 if git diff --cached --name-only | grep -qx "PROGRESS.md"; then
-    python3 "$REPO_ROOT/scripts/update_progress.py"
+    python3 -X utf8 "$REPO_ROOT/scripts/update_progress.py"
     git add "$REPO_ROOT/PROGRESS.md" "$REPO_ROOT/profile.html"
 fi
 EOF
