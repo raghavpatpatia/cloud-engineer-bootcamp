@@ -14,7 +14,7 @@ This is **your** file. Update it as you go. The next unchecked box is always you
 Name:   ____________________
 Started: ___________________
 Rank:   🥚 Intern
-XP:     250
+XP:     375
 ```
 
 ### 🎚️ Rank ladder
@@ -31,7 +31,7 @@ XP:     250
 
 | World | Status | XP earned |
 |------:|--------|----------:|
-| 0 · Environment Setup | 🔄 In progress | 250 |
+| 0 · Environment Setup | 🔄 In progress | 375 |
 | 1 · Internet Fundamentals | 🔒 Locked | 0 |
 | 2 · Linux | 🔒 Locked | 0 |
 | 3 · Git | 🔒 Locked | 0 |
@@ -42,7 +42,7 @@ XP:     250
 | 8 · Terraform | 🔒 Locked | 0 |
 | 9 · Kubernetes | 🔒 Locked | 0 |
 | 10 · Final Production | 🔒 Locked | 0 |
-| | **TOTAL** | **250** |
+| | **TOTAL** | **375** |
 
 > Legend: 🔒 Locked · ⬜ Not started · 🔄 In progress · ✅ Complete
 > A world unlocks when you've defeated the previous world's Boss Battle.
@@ -56,7 +56,7 @@ XP:     250
 ### 🖥️ World 0 — Environment Setup
 - [x] Lesson 1 — Meet your machine & the terminal
 - [x] Lesson 2 — Install WSL2 + Ubuntu
-- [ ] Lesson 3 — Editor, Node.js & a sane setup
+- [x] Lesson 3 — Editor, Node.js & a sane setup
 - [ ] Boss Battle — The Broken Workstation
 - [ ] 🏆 World 0 complete
 

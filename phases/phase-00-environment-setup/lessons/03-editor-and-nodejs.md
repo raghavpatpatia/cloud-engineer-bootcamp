@@ -174,13 +174,13 @@ node verify-setup.js
 
 ## ✅ Completion Checklist
 
-- [ ] VS Code is installed with the WSL extension
-- [ ] `code .` from Ubuntu opens VS Code showing "WSL: Ubuntu"
-- [ ] `node --version` and `npm --version` both print versions
-- [ ] I ran a `.js` file with `node`
-- [ ] `verify-setup.js` prints all three ✅ lines (Project Mission)
-- [ ] I passed the quiz
-- [ ] I added **+125 XP** to [PROGRESS.md](../../../PROGRESS.md)
+- [x] VS Code is installed with the WSL extension
+- [x] `code .` from Ubuntu opens VS Code showing "WSL: Ubuntu"
+- [x] `node --version` and `npm --version` both print versions
+- [x] I ran a `.js` file with `node`
+- [x] `verify-setup.js` prints all three ✅ lines (Project Mission)
+- [x] I passed the quiz
+- [x] I added **+125 XP** to [PROGRESS.md](../../../PROGRESS.md)
 
 ---
 
