@@ -57,9 +57,9 @@ A teammate reports these three symptoms. For **each**, explain the likely cause 
 
 ## 🏆 Victory conditions
 
-- [ ] `~/projects/audit-report.txt` exists and shows all four proofs from Part A
-- [ ] `~/projects/diagnosis.md` explains a **cause and a fix** for all three symptoms
-- [ ] You can say out loud *why* each fix works (not just *what* to type)
+- [x] `~/projects/audit-report.txt` exists and shows all four proofs from Part A
+- [x] `~/projects/diagnosis.md` explains a **cause and a fix** for all three symptoms
+- [x] You can say out loud *why* each fix works (not just *what* to type)
 
 ---
 

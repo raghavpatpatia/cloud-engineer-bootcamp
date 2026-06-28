@@ -7,19 +7,19 @@ Before you face the Boss Battle and unlock World 1, make sure all of this is tru
 ---
 
 ## 🧰 Tools installed
-- [ ] WSL2 is installed and Ubuntu launches
-- [ ] I have a Linux username and remember my Linux password
-- [ ] VS Code is installed with the **WSL** extension
-- [ ] Opening a folder with `code .` shows **"WSL: Ubuntu"** in the corner
-- [ ] `node --version` prints a version
-- [ ] `npm --version` prints a version
+- [x] WSL2 is installed and Ubuntu launches
+- [x] I have a Linux username and remember my Linux password
+- [x] VS Code is installed with the **WSL** extension
+- [x] Opening a folder with `code .` shows **"WSL: Ubuntu"** in the corner
+- [x] `node --version` prints a version
+- [x] `npm --version` prints a version
 
 ## 🧠 Skills I can do without looking up
-- [ ] Open a terminal and tell what folder I'm in (`pwd`)
-- [ ] List files, including hidden ones (`ls -la`)
-- [ ] Create a folder (`mkdir`) and a file (`touch` / `echo >`)
-- [ ] Read a file's contents (`cat`)
-- [ ] Run a JavaScript file with `node file.js`
+- [x] Open a terminal and tell what folder I'm in (`pwd`)
+- [x] List files, including hidden ones (`ls -la`)
+- [x] Create a folder (`mkdir`) and a file (`touch` / `echo >`)
+- [x] Read a file's contents (`cat`)
+- [x] Run a JavaScript file with `node file.js`
 
 ## 🔎 Self-test (do this from memory)
 Open Ubuntu and, without notes, run a sequence that:
@@ -46,8 +46,8 @@ If you did that without peeking — you're ready.
 ---
 
 ## 🎓 XP check
-- [ ] I recorded XP for all 3 lessons in [PROGRESS.md](../../PROGRESS.md) (375 XP)
-- [ ] (Optional) I did at least one Side Quest
+- [x] I recorded XP for all 3 lessons in [PROGRESS.md](../../PROGRESS.md) (375 XP)
+- [x] (Optional) I did at least one Side Quest
 
 ---
 
