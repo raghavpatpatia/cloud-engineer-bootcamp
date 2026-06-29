@@ -23,7 +23,7 @@ PROGRESS = Path(__file__).resolve().parent.parent / "PROGRESS.md"
 
 # Lessons per world (counted from phases/*/lessons/). Used to value the single
 # "Lessons complete" checkbox for worlds that don't list lessons individually.
-LESSONS_PER_WORLD = [3, 4, 5, 4, 5, 5, 5, 4, 4, 5, 5]
+LESSONS_PER_WORLD = [4, 5, 5, 5, 4, 5, 5, 4, 4, 4, 5, 6, 3]
 
 LESSON_XP = 125
 BOSS_XP = 500
@@ -32,11 +32,11 @@ SIDE_QUEST_XP = 50
 
 # Total XP -> Rank ladder (highest threshold first).
 RANKS = [
-    (12000, "☁️ **Cloud Engineer**"),
-    (9000, "🛡️ Staff Engineer"),
-    (6000, "⚙️ Senior Engineer"),
-    (3000, "🔧 Engineer"),
-    (1000, "🐣 Junior Engineer"),
+    (17000, "🏆 **Master Game Developer**"),
+    (13000, "🧠 Lead Engineer"),
+    (9000, "⚙️ Senior Gameplay Engineer"),
+    (5000, "🎮 Gameplay Programmer"),
+    (1500, "🐣 Junior Gameplay Programmer"),
     (0, "🥚 Intern"),
 ]
 
@@ -179,7 +179,7 @@ def render_milestones(text, pct, started):
         "|--------|-------------|--------|\n"
         f"| 🌱 **First Steps** | Tick your **first** box — the journey begins | {first_step} |\n"
         f"| 🎖️ **Halfway Hero** | Reach **50%** total completion | {halfway} |\n"
-        f"| 🏅 **Cloud Engineer Certified** | Reach **100%** total completion | {certified} |\n"
+        f"| 🏅 **Master Game Developer Certified** | Reach **100%** total completion | {certified} |\n"
     )
     return re.sub(
         r"(<!-- BEGIN:MILESTONES[^>]*-->).*?(<!-- END:MILESTONES -->)",
@@ -457,20 +457,20 @@ def generate_profile_html(text, computed, sq_done, sq_total, total_xp, pct):
     rewards = [
         reward("first", "🌱", "First Steps", "Tick your first box", total_xp > 0),
         reward("half", "🎖️", "Halfway Hero", "Reach 50% completion", pct >= 50),
-        reward("cert", "🏅", "Cloud Engineer Certified", "Reach 100% completion", pct >= 100),
+        reward("cert", "🏅", "Master Game Developer", "Reach 100% completion", pct >= 100),
     ]
 
     next_line = (f"{span - into} XP to <b>{_esc(next_rank)}</b>"
-                 if next_rank else "Max rank reached — you are a <b>Cloud Engineer</b>! ☁️")
+                 if next_rank else "Max rank reached — you are a <b>Master Game Developer</b>! 🏆")
 
     html = f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>{_esc(name)} · Cloud Engineer Bootcamp</title>
+<title>{_esc(name)} · The Combined Bootcamp</title>
 <style>{PROFILE_CSS}</style></head><body><div class="wrap">
 
-  <h1>☁️ {_esc(name)}'s Character Sheet</h1>
-  <div class="sub">Cloud Engineer Bootcamp · Started {_esc(started)} · auto-generated from PROGRESS.md</div>
+  <h1>🎮 {_esc(name)}'s Character Sheet</h1>
+  <div class="sub">The Combined Bootcamp · Pixel Forge Studios · Started {_esc(started)} · auto-generated from PROGRESS.md</div>
 
   <div class="sec">
     <div class="hero">
@@ -522,7 +522,7 @@ def main():
     changed = False
     if new_text != text:
         PROGRESS.write_text(new_text, encoding="utf-8")
-        milestone = " · 🏅 Cloud Engineer Certified!" if pct >= 100 else (" · 🎖️ Halfway Hero!" if pct >= 50 else "")
+        milestone = " · 🏅 Master Game Developer Certified!" if pct >= 100 else (" · 🎖️ Halfway Hero!" if pct >= 50 else "")
         print(f"✅ PROGRESS.md updated — {total_xp} XP ({pct}%), rank {rank_for(total_xp).replace('**', '')}{milestone}")
         changed = True
 

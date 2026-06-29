@@ -1,122 +1,106 @@
-# 📚 Resources — 100% Free, With Steps to Use Them
+# 📚 Resources — 100% Free, Curated by Area
 
-> **Everything here is free.** No paid courses, no subscriptions, no credit card required to *learn*. Where a cloud account is involved (AWS), we stick strictly to the **free tier** and show you how to stay inside it.
+> **Everything here is free.** No paid courses, no subscriptions, no credit card required to *learn*. Where a cloud account is involved (AWS), we stay strictly inside the **free tier** and show you how to not get charged.
 
-Each topic gives you exactly **four things** — no endless link dumps:
+Each area gives you **3–5 hand-picked resources** — official docs, the best free videos, and a deep dive — with **one line on how/when to use each**. No link dumps.
 
-- 📖 **Official docs** (free, authoritative)
-- ▶️ **One YouTube video** (free, high quality)
-- 🧪 **One practice site** (free to use)
-- 🧠 **One optional deep dive** (free)
-
-…plus **how to use each one** so a link never leaves you guessing.
-
-[↑ Back to README](README.md)
+[↑ Back to README](README.md)  ·  [📖 Glossary](GLOSSARY.md)  ·  [🎮 Game Overview](GAME_OVERVIEW.md)  ·  [⚔️ Quest Log](QUEST_LOG.md)
 
 ---
 
 ## 🧭 How to use *any* resource well
 
-Before the lists, learn the technique. It applies to all of them:
-
 ```mermaid
 flowchart LR
-    A["Hit a wall in a lesson"] --> B["Open the docs<br/>to the exact page"]
-    B --> C["Search the page<br/>(Ctrl+F) for your term"]
-    C --> D["Copy the smallest<br/>example that runs"]
-    D --> E["Change ONE thing<br/>& re-run"]
-    E --> F["Understand why<br/>it changed"]
+    A["Hit a wall<br/>in a lesson"] --> B["Open the doc<br/>to the exact page"]
+    B --> C["Find the smallest<br/>example that runs"]
+    C --> D["Change ONE thing<br/>& re-run"]
+    D --> E["Understand<br/>why it changed"]
 ```
 
-- 📖 **Docs** → Don't read top-to-bottom. Use them like a dictionary: jump to the page, `Ctrl+F` your term, copy the smallest working example.
-- ▶️ **Videos** → Watch **once at 1x to understand**, then **rewatch while building**, pausing to type each command yourself. Never watch passively.
-- 🧪 **Practice sites** → Do them *after* the lesson's Quest, as reps. They're for muscle memory, not first exposure.
-- 🧠 **Deep dives** → Optional. Open them only when you're curious *why*, never to "get ahead."
+- 📖 **Docs** → Use like a dictionary: jump to the page, `Ctrl+F` your term, copy the smallest working example.
+- ▶️ **Videos** → Watch once to understand, then rebuild while pausing to type it yourself. Never watch passively.
+- 🧠 **Deep dives** → Open only when you're curious *why*, never to "get ahead."
 
 > 💡 Golden rule: if a resource isn't helping you finish the current Quest, close it. You can always come back.
 
 ---
 
-## 🖥️ World 0 — Environment Setup (WSL2)
-- 📖 **Docs:** [Microsoft WSL Install Guide](https://learn.microsoft.com/windows/wsl/install) — *Use it for the exact `wsl --install` steps; follow it in order, top to bottom, once.*
-- ▶️ **Video:** Search YouTube for **"Install WSL2 Ubuntu on Windows"** (NetworkChuck / Microsoft official) — *Watch once, then redo each step yourself.*
-- 🧪 **Practice:** Your own terminal — *open Ubuntu and run `uname -a`, `whoami`, `pwd` until they feel normal.*
-- 🧠 **Deep dive:** [What is WSL2?](https://learn.microsoft.com/windows/wsl/about) — *Read only if you're curious how Windows runs Linux.*
+## 🧠 C# (World 1)
+- 📖 **[Microsoft C# docs](https://learn.microsoft.com/dotnet/csharp/)** — The authoritative reference; `Ctrl+F` any keyword (`struct`, `event`, `interface`) for the canonical explanation + example.
+- 🎓 **[Microsoft C# Tutorials (interactive)](https://learn.microsoft.com/dotnet/csharp/tour-of-csharp/)** — Run C# in the browser; do these for the language basics before writing gameplay.
+- 📘 **[C# Programming Guide — Classes & Structs](https://learn.microsoft.com/dotnet/csharp/programming-guide/classes-and-structs/)** — Read when value-vs-reference and stack-vs-heap (W1 L1) feel fuzzy.
+- 🧠 **[Game Programming Patterns (free online book)](https://gameprogrammingpatterns.com/)** by Bob Nystrom — The chapters on Observer, Component, and State map directly onto W1's events/composition/SOLID lessons.
 
-## 🌐 World 1 — Internet Fundamentals
-- 📖 **Docs:** [MDN — Overview of HTTP](https://developer.mozilla.org/docs/Web/HTTP/Overview) — *`Ctrl+F` "request" and "status" to find the parts you need.*
-- ▶️ **Video:** Search **"How the Internet Works" (freeCodeCamp / Computerphile)** — *Watch once for the mental model.*
-- 🧪 **Practice:** [httpbin.org](https://httpbin.org) — *A free server that echoes your requests back; perfect for `curl` experiments.*
-- 🧠 **Deep dive:** [MDN — DNS explained](https://developer.mozilla.org/docs/Glossary/DNS) — *Open when you want to know how names become IPs.*
+## 📐 Math for Games (World 2)
+- ▶️ **[Freya Holmer — "Math for Game Devs" / vector & dot-product videos](https://www.youtube.com/@Acegikmo)** — The clearest visual intuition for vectors, dot/cross, and lerp anywhere. Watch before W2.
+- 🧠 **[Red Blob Games](https://www.redblobgames.com/)** by Amit Patel — Interactive, hands-on explanations of vectors, angles, and (later) pathfinding. Play with the diagrams.
+- 📖 **[Unity Scripting API — Vector2 / Vector3 / Mathf](https://docs.unity3d.com/ScriptReference/Vector2.html)** — Look up `Dot`, `Lerp`, `Slerp`, `Atan2` for the exact signatures while building the `Mover`.
+- 🧠 **[Game Programming Patterns — Game Loop chapter](https://gameprogrammingpatterns.com/game-loop.html)** — Read for *why* you multiply by delta time (framerate independence, W2 L4–L5).
 
-## 🐧 World 2 — Linux
-- 📖 **Docs:** [Ubuntu Command Line Tutorial](https://ubuntu.com/tutorials/command-line-for-beginners) — *Free, step-by-step; do it alongside the lessons.*
-- ▶️ **Video:** Search **"Linux Command Line Full Course freeCodeCamp"** — *Use as a reference; jump to the chapter you need.*
-- 🧪 **Practice:** [linuxjourney.com](https://linuxjourney.com) — *Free interactive lessons; do one module after each Linux lesson.*
-- 🧠 **Deep dive:** [The Linux `man` pages](https://man7.org/linux/man-pages/) — *Run `man <command>` in your own terminal for any command you meet.*
+## 🎮 Unity Core (Worlds 0, 3, 5)
+- 🎓 **[Unity Learn](https://learn.unity.com/)** — Free official courses/tutorials; do the "Junior Programmer" path alongside W0–W3 for editor + scripting fluency.
+- 📖 **[Unity Manual](https://docs.unity3d.com/Manual/)** & **[Scripting API](https://docs.unity3d.com/ScriptReference/)** — Your two daily references; Manual for concepts, ScriptReference for exact API.
+- 🧠 **[Catlike Coding](https://catlikecoding.com/unity/tutorials/)** by Jasper Flick — Deep, rigorous Unity C# tutorials; excellent for ScriptableObjects, object pooling, and meshes.
+- ▶️ **[Sebastian Lague — YouTube](https://www.youtube.com/@SebastianLague)** — Beautifully explained Unity projects; his series double as W3–W6 inspiration.
 
-## 🌿 World 3 — Git
-- 📖 **Docs:** [Pro Git Book](https://git-scm.com/book) — *Free, full book online; read chapters 1–3 only for now.*
-- ▶️ **Video:** Search **"Git and GitHub for Beginners freeCodeCamp"** — *Watch once, build along.*
-- 🧪 **Practice:** [learngitbranching.js.org](https://learngitbranching.js.org) — *Free visual Git game — the best way to truly feel how branching works.*
-- 🧠 **Deep dive:** [GitHub Docs](https://docs.github.com) — *Free; use for pull requests and collaboration features.*
+## 🧮 Algorithms & Data Structures (World 4)
+- 🧠 **[Red Blob Games — Introduction to A\*](https://www.redblobgames.com/pathfinding/a-star/introduction.html)** — The single best A\* explainer; interactive, builds straight to W4 L3. Read it twice.
+- ▶️ **[Sebastian Lague — A\* Pathfinding series](https://www.youtube.com/playlist?list=PLFt_AvWsXl0cq5Umv3pMC9SPnKjfp9eGW)** — Watch to see A\* implemented in Unity step by step.
+- 📖 **[Microsoft .NET Collections docs](https://learn.microsoft.com/dotnet/standard/collections/)** — Reference for choosing `List`/`Dictionary`/`HashSet`/`Queue`/`Stack` by access pattern (W4 L1).
+- 🧠 **[VisuAlgo](https://visualgo.net/)** — Animates BFS/DFS, graphs, and sorting; use to *see* the traversals from W4 L2.
 
-## ⚙️ World 4 — Backend Development
-- 📖 **Docs:** [Express.js Guide](https://expressjs.com/en/guide/routing.html) — *`Ctrl+F` "route" and "middleware" while building.*
-- ▶️ **Video:** Search **"Node.js and Express REST API freeCodeCamp"** — *Follow along building endpoints.*
-- 🧪 **Practice:** [Node.js + Express on your machine](https://nodejs.org) — *Free runtime; the lessons are your practice.*
-- 🧠 **Deep dive:** [MDN — REST](https://developer.mozilla.org/docs/Glossary/REST) — *Read to solidify what makes an API "RESTful".*
+## 🤖 AI (World 6)
+- 🧠 **[Game Programming Patterns — State chapter](https://gameprogrammingpatterns.com/state.html)** — The clean FSM pattern behind W6 L1, with game examples.
+- ▶️ **[Sebastian Lague — Field of View / steering visualizations](https://www.youtube.com/@SebastianLague)** — Great visual grounding for perception cones (W6 L2) and steering (W6 L3).
+- 🧠 **[Red Blob Games — pathfinding & movement notes](https://www.redblobgames.com/pathfinding/)** — Steering and grid movement tie A\* into smooth enemy navigation.
+- 📖 **[Behavior Trees in Robotics and AI (free intro chapters)](https://btirai.github.io/)** — Read the first chapters for the formal model behind W6 L4 behavior trees.
 
-## 🐳 World 5 — Docker
-- 📖 **Docs:** [Docker Get Started](https://docs.docker.com/get-started/) — *Free; follow the "containerize an application" section.*
-- ▶️ **Video:** Search **"Docker Tutorial for Beginners freeCodeCamp / TechWorld with Nana"** — *Watch once, then write your Dockerfile.*
-- 🧪 **Practice:** [Play with Docker](https://labs.play-with-docker.com) — *Free in-browser Docker; no install needed, great for experiments.*
-- 🧠 **Deep dive:** [Docker — best practices for Dockerfiles](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/) — *Read when your images feel too big.*
+## 🎨 Rendering & Shaders (World 7)
+- 🧠 **[The Book of Shaders](https://thebookofshaders.com/)** by Patricio Gonzalez Vivo — The gentlest hands-on intro to fragment shaders; do it before writing the W7 dissolve/hit-flash shader.
+- 🧠 **[Catlike Coding — Rendering & shader tutorials](https://catlikecoding.com/unity/tutorials/)** — Rigorous Unity-specific shader and rendering deep dives.
+- 📖 **[Unity URP (Universal Render Pipeline) docs](https://docs.unity3d.com/Manual/urp/urp-introduction.html)** — Reference for setting up URP, 2D lighting, and post-processing (W7 L1, L3, L4).
+- ▶️ **[Freya Holmer — "Shaders for Game Devs" talks](https://www.youtube.com/@Acegikmo)** — Build the mental model of vertex/fragment stages and UVs.
 
-## ☁️ World 6 — AWS  *(free tier only!)*
-- 📖 **Docs:** [AWS Free Tier](https://aws.amazon.com/free/) — *Read FIRST. Know exactly which services are free and the limits before you click anything.*
-- ▶️ **Video:** Search **"AWS EC2 Tutorial for Beginners"** — *Watch once; we use only free-tier `t2.micro`/`t3.micro` instances.*
-- 🧪 **Practice:** [AWS Free Tier account](https://aws.amazon.com/free/) — *Sign up; set a **billing alarm at $1** immediately (we show you how in World 6).*
-- 🧠 **Deep dive:** [AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/) — *Free; skim the "Cost Optimization" pillar.*
+## 🌐 Networking (World 8)
+- 🧠 **[Gaffer On Games](https://gafferongames.com/)** by Glenn Fiedler — The canonical free articles on UDP, networked physics, and client prediction/reconciliation. Read "What Every Programmer Needs To Know About Game Networking."
+- 📖 **[Unity Netcode for GameObjects docs](https://docs-multiplayer.unity3d.com/)** — Reference for RPCs, network variables, and server-authoritative setup (W8 L2–L3).
+- 🧠 **[Valve — Source Multiplayer Networking](https://developer.valvesoftware.com/wiki/Source_Multiplayer_Networking)** — Classic explainer on prediction, interpolation, and lag compensation.
+- 📖 **[Mirror Networking docs](https://mirror-networking.gitbook.io/docs/)** — Free, open-source alternative to Netcode; good reference if you use Mirror.
 
-> ⚠️ **Stay free:** always stop/terminate instances when done, use only `t2.micro`/`t3.micro`, and keep that billing alarm on. World 6 has a full "don't get charged" guide.
+## 🏗️ Engine Architecture (World 9)
+- 🧠 **[Game Programming Patterns — Optimization Patterns](https://gameprogrammingpatterns.com/optimization-patterns.html)** by Bob Nystrom — The Object Pool, Data Locality, and Dirty Flag chapters are W9's backbone (read these for free).
+- 🧠 **[Mike Acton — "Data-Oriented Design" talk (CppCon, free on YouTube)](https://www.youtube.com/watch?v=rX0ItVEVjHc)** — The talk that defines DOD thinking behind W9 L1 (AoS vs SoA, cache).
+- 📖 **[Unity DOTS / ECS docs](https://docs.unity3d.com/Packages/com.unity.entities@latest)** — Reference for Unity's real ECS; read after building the ECS-lite to see the production version.
+- 🧠 **[Game Engine Architecture (Jason Gregory) — companion site](https://www.gameenginebook.com/)** — Use the free chapter list/figures as a map of engine layering (W9 L4).
 
-## 🔁 World 7 — CI/CD
-- 📖 **Docs:** [GitHub Actions Docs](https://docs.github.com/actions) — *Free for public repos; `Ctrl+F` "workflow" and "secrets".*
-- ▶️ **Video:** Search **"GitHub Actions Tutorial TechWorld with Nana"** — *Build your first pipeline along with it.*
-- 🧪 **Practice:** Your own GitHub repo — *Actions are free on public repos; every push is practice.*
-- 🧠 **Deep dive:** [GitHub Actions — security hardening](https://docs.github.com/actions/security-guides) — *Read before putting secrets in a pipeline.*
+## 🚀 Production & Cloud (Worlds 8 & 10)
+- 📖 **[Docker — Get Started](https://docs.docker.com/get-started/)** — Free; follow the "containerize an application" section to Dockerize the dedicated server (W8 L4). Practice in-browser at [Play with Docker](https://labs.play-with-docker.com).
+- 📖 **[GitHub Actions docs](https://docs.github.com/actions)** — **Free for public repos**; `Ctrl+F` "workflow" and "secrets" while building Ashfall's CI/CD (W10 L2).
+- 📖 **[Kubernetes docs — Concepts](https://kubernetes.io/docs/concepts/)** — Free; start with Workloads. Run a free local cluster with [minikube](https://minikube.sigs.k8s.io/) or [kind](https://kind.sigs.k8s.io/), or [killercoda](https://killercoda.com/kubernetes) in-browser (W10 L3).
+- 📖 **[Terraform docs + HashiCorp Learn](https://developer.hashicorp.com/terraform/tutorials)** — Free official tutorials; do the AWS track to provision EKS (W10 L4).
+- 📖 **[AWS Free Tier](https://aws.amazon.com/free/)** — Read **FIRST**. Know exactly which services are free and the limits before you click anything.
 
-## 🏗️ World 8 — Terraform
-- 📖 **Docs:** [Terraform Docs](https://developer.hashicorp.com/terraform/docs) — *Free; use the AWS provider reference like a dictionary.*
-- ▶️ **Video:** Search **"Terraform Course freeCodeCamp / TechWorld with Nana"** — *Watch once, then write your `.tf` files.*
-- 🧪 **Practice:** [HashiCorp Learn — Terraform](https://developer.hashicorp.com/terraform/tutorials) — *Free official tutorials; do the AWS track.*
-- 🧠 **Deep dive:** [Terraform — state explained](https://developer.hashicorp.com/terraform/language/state) — *Read when state confuses you (it will at first).*
-
-## ☸️ World 9 — Kubernetes
-- 📖 **Docs:** [Kubernetes Docs](https://kubernetes.io/docs/home/) — *Free; start with "Concepts → Workloads".*
-- ▶️ **Video:** Search **"Kubernetes Tutorial for Beginners TechWorld with Nana"** — *The clearest free K8s intro; watch once fully.*
-- 🧪 **Practice:** [killercoda.com Kubernetes playgrounds](https://killercoda.com/kubernetes) — *Free in-browser clusters; or run `minikube`/`kind` locally (also free).*
-- 🧠 **Deep dive:** [Kubernetes — the Hard Way (read-only)](https://github.com/kelseyhightower/kubernetes-the-hard-way) — *Don't *do* it yet; skim to appreciate what managed K8s saves you.*
-
-## 🚀 World 10 — Production
-- 📖 **Docs:** [Let's Encrypt](https://letsencrypt.org/getting-started/) — *Free HTTPS certificates; this is how you get TLS for $0.*
-- ▶️ **Video:** Search **"Free domain + HTTPS setup tutorial"** — *Use a free domain option (e.g. a free subdomain provider) for the project.*
-- 🧪 **Practice:** [Uptime monitoring free tier](https://uptimerobot.com) — *Free plan monitors your live app and alerts you.*
-- 🧠 **Deep dive:** [Google SRE Book](https://sre.google/books/) — *Free online; read the chapters on monitoring and SLOs.*
+> ⚠️ **AWS cost safety — read before touching AWS (W10):**
+> - **Set a billing alarm at \$1** the moment your account exists (AWS Budgets → CloudWatch alarm). Don't skip this.
+> - **Note:** managed Kubernetes (**EKS**) and load balancers are **NOT free** — the EKS control plane bills per hour. For learning, prefer **local k8s (minikube/kind)** and only spin up EKS briefly if at all.
+> - Use only free-tier-eligible instance types (`t2.micro`/`t3.micro`) and **stop/terminate everything** the moment you finish.
+> - **`terraform destroy`** when done — IaC makes teardown one command, so there's no excuse for a forgotten running cluster.
+> - Check the **AWS Billing dashboard** before you log off, every session. W10 L5 includes a full cost-control + teardown guide.
 
 ---
 
-## 🆓 Free things to keep handy throughout
+## 🆓 Free tools to keep handy throughout
 
 | Need | Free tool | How to use it |
 |------|-----------|---------------|
-| Code editor | [VS Code](https://code.visualstudio.com) | Install the **WSL** extension; edit Linux files from Windows |
-| Test HTTP requests | `curl` (built in) + [httpbin.org](https://httpbin.org) | Run `curl` against your API and httpbin to compare |
-| Diagrams | [Mermaid Live Editor](https://mermaid.live) | Paste any diagram from these lessons to edit/learn it |
+| Engine | [Unity (Personal)](https://unity.com/download) | Free for the bootcamp; install via Unity Hub |
+| Code editor | [VS Code](https://code.visualstudio.com) (+ C# Dev Kit) or [Rider (free non-commercial)](https://www.jetbrains.com/rider/) | Edit and debug your C# |
+| Diagrams | [Mermaid Live Editor](https://mermaid.live) | Paste any diagram from these docs to edit/learn it |
 | Markdown preview | VS Code (`Ctrl+Shift+V`) | Read these `.md` files with diagrams rendered |
-| Cheatsheets | [devhints.io](https://devhints.io) | Free one-page references for git, bash, docker, etc. |
+| Cheatsheets | [devhints.io](https://devhints.io) | One-page references for git, bash, docker, etc. |
+| Version control | [Git](https://git-scm.com) + [GitHub](https://github.com) | Free repos; Actions are free on public repos |
 
 ---
 
-[↑ Back to README](README.md)  ·  [📖 Glossary →](GLOSSARY.md)  ·  [📊 Progress →](PROGRESS.md)
+[↑ Back to README](README.md)  ·  [📖 Glossary →](GLOSSARY.md)  ·  [🎮 Game Overview](GAME_OVERVIEW.md)  ·  [⚔️ Quest Log](QUEST_LOG.md)  ·  [📊 Progress](PROGRESS.md)

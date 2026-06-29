@@ -1,0 +1,409 @@
+{
+  "flagship": "Ashfall",
+  "worlds": [
+    {
+      "num": 0,
+      "slug": "phase-00-dev-environment",
+      "title": "Dev Environment & Mindset",
+      "emoji": "🖥️",
+      "boss": "First Build, First Commit",
+      "lessons": [
+        {
+          "num": 1,
+          "slug": "01-meet-the-studio-and-the-loop",
+          "title": "Meet the Studio & the Game Loop"
+        },
+        {
+          "num": 2,
+          "slug": "02-install-unity-and-editor",
+          "title": "Install Unity & Your Editor"
+        },
+        {
+          "num": 3,
+          "slug": "03-version-control-with-git",
+          "title": "Version Control with Git"
+        },
+        {
+          "num": 4,
+          "slug": "04-engineer-mindset-and-debugging",
+          "title": "The Engineer Mindset & Debugging"
+        }
+      ]
+    },
+    {
+      "num": 1,
+      "slug": "phase-01-programming-mastery",
+      "title": "Programming Mastery (Advanced C#)",
+      "emoji": "🧠",
+      "boss": "Refactor the Spaghetti",
+      "lessons": [
+        {
+          "num": 1,
+          "slug": "01-csharp-types-and-memory",
+          "title": "C# Types & Memory"
+        },
+        {
+          "num": 2,
+          "slug": "02-oop-and-composition",
+          "title": "OOP & Composition"
+        },
+        {
+          "num": 3,
+          "slug": "03-interfaces-and-solid",
+          "title": "Interfaces & SOLID"
+        },
+        {
+          "num": 4,
+          "slug": "04-events-and-the-observer-pattern",
+          "title": "Events & the Observer Pattern"
+        },
+        {
+          "num": 5,
+          "slug": "05-managers-and-game-state",
+          "title": "Managers & Game State"
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "slug": "phase-02-math-for-games",
+      "title": "Mathematics for Games",
+      "emoji": "📐",
+      "boss": "The Aiming Reticle",
+      "lessons": [
+        {
+          "num": 1,
+          "slug": "01-vectors-and-coordinate-spaces",
+          "title": "Vectors & Coordinate Spaces"
+        },
+        {
+          "num": 2,
+          "slug": "02-dot-and-cross-products",
+          "title": "Dot & Cross Products"
+        },
+        {
+          "num": 3,
+          "slug": "03-trigonometry-and-rotation",
+          "title": "Trigonometry & Rotation"
+        },
+        {
+          "num": 4,
+          "slug": "04-interpolation-and-easing",
+          "title": "Interpolation & Easing"
+        },
+        {
+          "num": 5,
+          "slug": "05-transforms-and-delta-time",
+          "title": "Transforms & Delta Time"
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "slug": "phase-03-core-game-programming",
+      "title": "Core Game Programming",
+      "emoji": "🎮",
+      "boss": "The Playable Slice",
+      "lessons": [
+        {
+          "num": 1,
+          "slug": "01-the-input-system",
+          "title": "The Input System"
+        },
+        {
+          "num": 2,
+          "slug": "02-player-controller-and-physics",
+          "title": "Player Controller & Physics"
+        },
+        {
+          "num": 3,
+          "slug": "03-collision-and-triggers",
+          "title": "Collision & Triggers"
+        },
+        { "num": 4, "slug": "04-camera-systems", "title": "Camera Systems" },
+        {
+          "num": 5,
+          "slug": "05-saving-and-loading",
+          "title": "Saving & Loading"
+        }
+      ]
+    },
+    {
+      "num": 4,
+      "slug": "phase-04-algorithms-data-structures",
+      "title": "Algorithms & Data Structures",
+      "emoji": "🧮",
+      "boss": "The Infinite Dungeon",
+      "lessons": [
+        {
+          "num": 1,
+          "slug": "01-big-o-and-data-structures",
+          "title": "Big-O & Data Structures"
+        },
+        {
+          "num": 2,
+          "slug": "02-graphs-grids-and-traversal",
+          "title": "Graphs, Grids & Traversal"
+        },
+        {
+          "num": 3,
+          "slug": "03-a-star-pathfinding",
+          "title": "A* Pathfinding"
+        },
+        {
+          "num": 4,
+          "slug": "04-procedural-generation-and-spatial-grids",
+          "title": "Procedural Generation & Spatial Grids"
+        }
+      ]
+    },
+    {
+      "num": 5,
+      "slug": "phase-05-gameplay-systems",
+      "title": "Gameplay Systems",
+      "emoji": "⚔️",
+      "boss": "The Loot Run",
+      "lessons": [
+        {
+          "num": 1,
+          "slug": "01-data-driven-design-with-scriptableobjects",
+          "title": "Data-Driven Design with ScriptableObjects"
+        },
+        {
+          "num": 2,
+          "slug": "02-inventory-and-equipment",
+          "title": "Inventory & Equipment"
+        },
+        {
+          "num": 3,
+          "slug": "03-abilities-and-cooldowns",
+          "title": "Abilities & Cooldowns"
+        },
+        {
+          "num": 4,
+          "slug": "04-combat-and-damage",
+          "title": "Combat & Damage"
+        },
+        {
+          "num": 5,
+          "slug": "05-status-effects-loot-and-economy",
+          "title": "Status Effects, Loot & Economy"
+        }
+      ]
+    },
+    {
+      "num": 6,
+      "slug": "phase-06-artificial-intelligence",
+      "title": "Artificial Intelligence",
+      "emoji": "🤖",
+      "boss": "The Ashen Warden",
+      "lessons": [
+        {
+          "num": 1,
+          "slug": "01-finite-state-machines",
+          "title": "Finite State Machines"
+        },
+        {
+          "num": 2,
+          "slug": "02-perception-and-sensing",
+          "title": "Perception & Sensing"
+        },
+        {
+          "num": 3,
+          "slug": "03-steering-and-navigation",
+          "title": "Steering & Navigation"
+        },
+        { "num": 4, "slug": "04-behavior-trees", "title": "Behavior Trees" },
+        {
+          "num": 5,
+          "slug": "05-boss-design-and-utility-ai",
+          "title": "Boss Design & Utility AI"
+        }
+      ]
+    },
+    {
+      "num": 7,
+      "slug": "phase-07-rendering-graphics",
+      "title": "Rendering & Graphics",
+      "emoji": "🎨",
+      "boss": "Atmosphere Pass",
+      "lessons": [
+        {
+          "num": 1,
+          "slug": "01-the-rendering-pipeline",
+          "title": "The Rendering Pipeline"
+        },
+        {
+          "num": 2,
+          "slug": "02-shaders-and-materials",
+          "title": "Shaders & Materials"
+        },
+        {
+          "num": 3,
+          "slug": "03-2d-lighting-and-shadows",
+          "title": "2D Lighting & Shadows"
+        },
+        {
+          "num": 4,
+          "slug": "04-particles-postprocessing-and-juice",
+          "title": "Particles, Post-Processing & Juice"
+        }
+      ]
+    },
+    {
+      "num": 8,
+      "slug": "phase-08-networking-multiplayer",
+      "title": "Networking & Multiplayer",
+      "emoji": "🌐",
+      "boss": "Co-op in a Container",
+      "lessons": [
+        {
+          "num": 1,
+          "slug": "01-networking-fundamentals",
+          "title": "Networking Fundamentals"
+        },
+        {
+          "num": 2,
+          "slug": "02-state-sync-and-authority",
+          "title": "State Sync & Authority"
+        },
+        {
+          "num": 3,
+          "slug": "03-co-op-gameplay-and-rpcs",
+          "title": "Co-op Gameplay & RPCs"
+        },
+        {
+          "num": 4,
+          "slug": "04-dedicated-server-and-docker",
+          "title": "Dedicated Server & Docker"
+        }
+      ]
+    },
+    {
+      "num": 9,
+      "slug": "phase-09-engine-architecture",
+      "title": "Game Engine Architecture",
+      "emoji": "🏗️",
+      "boss": "1000 Entities at 60 FPS",
+      "lessons": [
+        {
+          "num": 1,
+          "slug": "01-data-oriented-design",
+          "title": "Data-Oriented Design"
+        },
+        {
+          "num": 2,
+          "slug": "02-ecs-lite-and-object-pooling",
+          "title": "ECS-lite & Object Pooling"
+        },
+        {
+          "num": 3,
+          "slug": "03-serialization-and-asset-pipeline",
+          "title": "Serialization & Asset Pipeline"
+        },
+        {
+          "num": 4,
+          "slug": "04-subsystems-and-engine-layering",
+          "title": "Subsystems & Engine Layering"
+        }
+      ]
+    },
+    {
+      "num": 10,
+      "slug": "phase-10-production-and-cloud",
+      "title": "Production Engineering & Cloud",
+      "emoji": "🚀",
+      "boss": "Ship the Server",
+      "lessons": [
+        {
+          "num": 1,
+          "slug": "01-profiling-and-optimization",
+          "title": "Profiling & Optimization"
+        },
+        {
+          "num": 2,
+          "slug": "02-automated-builds-and-ci-cd",
+          "title": "Automated Builds & CI/CD"
+        },
+        {
+          "num": 3,
+          "slug": "03-containers-and-the-cloud",
+          "title": "Containers & the Cloud"
+        },
+        {
+          "num": 4,
+          "slug": "04-infrastructure-as-code-with-terraform",
+          "title": "Infrastructure as Code with Terraform"
+        },
+        {
+          "num": 5,
+          "slug": "05-deploy-monitor-and-operate",
+          "title": "Deploy, Monitor & Operate"
+        }
+      ]
+    },
+    {
+      "num": 11,
+      "slug": "phase-11-portfolio-projects",
+      "title": "Portfolio Projects",
+      "emoji": "📦",
+      "boss": "Portfolio Review",
+      "lessons": [
+        {
+          "num": 1,
+          "slug": "01-brief-2d-platformer",
+          "title": "Brief: 2D Platformer"
+        },
+        {
+          "num": 2,
+          "slug": "02-brief-tower-defense",
+          "title": "Brief: Tower Defense"
+        },
+        {
+          "num": 3,
+          "slug": "03-brief-puzzle-game",
+          "title": "Brief: Puzzle Game"
+        },
+        {
+          "num": 4,
+          "slug": "04-brief-turn-based-roguelike",
+          "title": "Brief: Turn-Based Roguelike"
+        },
+        {
+          "num": 5,
+          "slug": "05-brief-top-down-shooter",
+          "title": "Brief: Top-Down Shooter"
+        },
+        {
+          "num": 6,
+          "slug": "06-brief-multiplayer-mini-engine",
+          "title": "Brief: Multiplayer Mini-Engine"
+        }
+      ]
+    },
+    {
+      "num": 12,
+      "slug": "phase-12-final-boss",
+      "title": "Final Boss — Ship Ashfall",
+      "emoji": "👑",
+      "boss": "Launch Day",
+      "lessons": [
+        {
+          "num": 1,
+          "slug": "01-milestone-systems-and-architecture",
+          "title": "Milestone: Systems & Architecture"
+        },
+        {
+          "num": 2,
+          "slug": "02-milestone-optimization-and-polish",
+          "title": "Milestone: Optimization & Polish"
+        },
+        {
+          "num": 3,
+          "slug": "03-milestone-build-deploy-and-document",
+          "title": "Milestone: Build, Deploy & Document"
+        }
+      ]
+    }
+  ]
+}
