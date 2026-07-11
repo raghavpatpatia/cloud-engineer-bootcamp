@@ -212,13 +212,13 @@ cat taskflow-requests.md
 
 ## ✅ Completion Checklist
 
-- [ ] I can explain client vs. server and the request/response model
-- [ ] I opened `httpbin.org/get` in a browser and read the response
-- [ ] I ran `curl https://httpbin.org/get` and saw the same response raw
-- [ ] I completed the Mini Challenge and found the query string in the response
-- [ ] I created `~/projects/taskflow-requests.md` (Project Mission)
-- [ ] I passed the quiz
-- [ ] I added **+125 XP** to [PROGRESS.md](../../../PROGRESS.md)
+- [x] I can explain client vs. server and the request/response model
+- [x] I opened `httpbin.org/get` in a browser and read the response
+- [x] I ran `curl https://httpbin.org/get` and saw the same response raw
+- [x] I completed the Mini Challenge and found the query string in the response
+- [x] I created `~/projects/taskflow-requests.md` (Project Mission)
+- [x] I passed the quiz
+- [x] I added **+125 XP** to [PROGRESS.md](../../../PROGRESS.md)
 
 ---
 
