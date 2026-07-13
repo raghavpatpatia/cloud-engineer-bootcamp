@@ -231,13 +231,13 @@ cat taskflow-requests.md
 
 ## ✅ Completion Checklist
 
-- [ ] I resolved a domain to an IP with `nslookup`
-- [ ] I used `dig +short` to get a clean IP
-- [ ] I ran `ping -c 4` and understood the round-trip time
-- [ ] I saw curl connect on port 443 with `curl -v`
-- [ ] I appended addressing notes (with a real IP) to `taskflow-requests.md` (Project Mission)
-- [ ] I passed the quiz
-- [ ] I added **+125 XP** to [PROGRESS.md](../../../PROGRESS.md)
+- [x] I resolved a domain to an IP with `nslookup`
+- [x] I used `dig +short` to get a clean IP
+- [x] I ran `ping -c 4` and understood the round-trip time
+- [x] I saw curl connect on port 443 with `curl -v`
+- [x] I appended addressing notes (with a real IP) to `taskflow-requests.md` (Project Mission)
+- [x] I passed the quiz
+- [x] I added **+125 XP** to [PROGRESS.md](../../../PROGRESS.md)
 
 ---
 
